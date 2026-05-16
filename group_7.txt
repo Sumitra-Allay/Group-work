@@ -1,0 +1,15 @@
+Serial Number,Student Name,Student ID
+2,Chador Zangmo,8250263
+4,Choki Penjor Wangchuk,8250265
+6,Dorji Tshering,8250267
+8,Karma Wangdi,8250269
+10,Kencho Sonam,8250271
+12,Khamsum Kuenda Wangchuk,8250273
+14,Lhendup Dorji,8250275
+16,Namrata Gurung,8250277
+18,Samten Dolma,8250279
+20,Sangay Rinchen,8250281
+22,Sonam Choki,8250283
+24,Soniya Mongar,8250285
+26,Thubten Ugyen Norbu,8250287
+28,Wangchen Lhamo,8250289
