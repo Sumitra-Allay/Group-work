@@ -1,14 +1,14 @@
-# Start with an empty list to collect the students we want
-selected_students = []
+# Starting empty list to store selected names
+selected_students = [] #creating empty list
 
 # Try to open the file named students.txt from the current folder.
 # If it is not found here, try one folder up.
 try:
-    file = open("students.txt", "r")
-except FileNotFoundError:
-    file = open("..\students.txt", "r")
+    file = open("students.txt", "r") #open students.txt
+except FileNotFoundError: #if not "FileNotFoundError"
+    file = open("..\students.txt", "r") #Open students.txt
 
-with file:
+with file: #
     # Read every line from the file into a list of lines
     lines = file.readlines()
 
