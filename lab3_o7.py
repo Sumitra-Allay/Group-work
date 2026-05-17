@@ -37,18 +37,17 @@ with file: #use "with" to close file
         # The middle pieces are the student's name
         student_name = " ".join(data[1:-1]).strip()
         # The last piece is the student ID
-        student_id = data[-1].strip()
-
-        # Convert the student ID from text to a number
+        student_id = data[-1].strip()  
+        # Converting the student ID into an integer
         try:
             sid = int(student_id)
         except ValueError:
             # Skip rows where the ID is not a valid number
             continue
 
-        # Only keep students whose ID is an odd number
+        # Check if the student ID is odd
         if sid % 2 != 0:
-            selected_students.append([serial_number, student_name, sid])
+            selected_students.append([serial_number, student_name, sid])#Add the student details into the selected_students list
 
 # Sort the selected students by their student ID number
 selected_students.sort(key=lambda x: x[2])
