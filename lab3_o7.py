@@ -1,29 +1,29 @@
 # Starting empty list to store selected names
 selected_students = [] #creating empty list
 
-# Try to open the file named students.txt from the current folder.
-# If it is not found here, try one folder up.
+# Try to open the file named students.txt 
+# If there isn't try creating another one
 try:
     file = open("students.txt", "r") #open students.txt
 except FileNotFoundError: #if not "FileNotFoundError"
-    file = open("..\students.txt", "r") #Open students.txt
+    file = open("..\students.txt", "r") #Opening students.txt
 
-with file: #
+with file: #use "with" to close file
     # Read every line from the file into a list of lines
-    lines = file.readlines()
+    lines = file.readlines() #read it from lines
 
-    # Ignore the first line because it is the header row
-    for line in lines[1:]:
+    # Loop the lines
+    for line in lines[1:]: #Loop it
 
-        # Remove extra spaces and the newline at the end
-        line = line.strip()
+        # Remove the extra line
+        line = line.strip() #Use line.strip
 
-        if not line:
-            # Skip empty lines if there are any
-            continue
+        if not line: #see if line empty
+            # Skip empty lines if there is
+            continue #Use continue
 
-        # Split the line on whitespace, which works for tabs and spaces
-        data = line.split()
+        # Split the line if necessary
+        data = line.split() 
         if len(data) < 3:
             # Skip any lines that do not have at least three columns
             continue
@@ -80,4 +80,4 @@ with open("group_7.txt", "w") as output_file:
     for student in selected_students:
         output_file.write(f"{student[0]},{student[1]},{student[2]}\n")
 
-print("\nData has been stored in group_7.txt")
+print("\nData has been stored in group_7.txt") 
