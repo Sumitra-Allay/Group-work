@@ -1,7 +1,9 @@
 # Starting empty list to store selected names
-selected_students = [] #creating empty list
+#creating empty list
+selected_students = [] 
 
 # Try to open the file named students.txt 
+
 # If there isn't try creating another one
 try:
     file = open("students.txt", "r") #open students.txt
@@ -45,7 +47,7 @@ with file: #use "with" to close file
             # Skip rows where the ID is not a valid number
             continue
 
-        # Check if the student ID is odd
+        # Check whether the student ID is odd
         if sid % 2 != 0:
             selected_students.append([serial_number, student_name, sid])#Add the student details into the selected_students list
 
